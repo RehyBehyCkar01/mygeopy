@@ -14,6 +14,6 @@ jobs:
         run:  |
           python -m install '.[tests]'
 
-    -name: Run tests
-    run:  |
-        python -m pytest .
+      - name: Run tests
+        run:  |
+         python -m pytest .
