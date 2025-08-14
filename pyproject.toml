@@ -1,0 +1,32 @@
+[project]
+name = "mygeopy"
+dynamic = ["version"]
+version =["0.1.0a0"]
+license ="MIT"
+license-files =["MIT"]
+description = "Minimal example of a Python testing"
+readme = "README.md"
+authors = [{ name = "Rebecca Awe", email = "rebecca.awe575@topper.wku.edu" }
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+tests = ["pytest"]
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules"
+
+
+[project.urls]
+"Homepage" = "https://github.com/RehyBehyCkar01/mygeopy.git"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.hatch.build.targets.wheel]
+packages = ["mygeopy"]
+[tool.hatch.version]
+source = "vcs"
+fallback_version = "0.0.0+nogit"
