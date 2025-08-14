@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Install deps
         run:  |
-          python -m install '.[tests]'
+          python -m pip install '.[tests]'
 
       - name: Run tests
         run:  |
