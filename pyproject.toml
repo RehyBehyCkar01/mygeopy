@@ -1,9 +1,8 @@
 [project]
 name = "mygeopy"
 dynamic = ["version"]
-version =["0.1.0a0"]
-license ="MIT"
-license-files =["MIT"]
+license = "MIT"
+license-files = ["LICENSE.txt"]
 description = "Minimal example of a Python testing"
 readme = "README.md"
 authors = [{ name = "Rebecca Awe", email = "rebecca.awe575@topper.wku.edu" }
